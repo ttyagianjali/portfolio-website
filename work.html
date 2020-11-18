@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Anjali's Portfolio</title>
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+  <link rel="resetcss" type="text/css" href="reset.html">
+</head> 
+		<body>
+
+
+        <div class="header">
+          <!-- header is the parent class and logo and navigation are its child classes -->
+          <div class="logo-container">
+            <h1>Anjali <Span>Tyagi</Span></h1>
+          </div>
+          <div>
+            <ul role="menubar" class="navigation-list">
+              <!--class=navigation-list (block) -->
+              <li role="presentation"><a href="index.html" role="menuitem" class="navigation-list__item">Home</a></li>
+              <!--navigation-list__item (element), navigation-list__item--active(modifier) -->
+              <li role="presentation"><a href="work.html" role="menuitem"
+                  class="navigation-list__item navigation-list__item--active">Work</a></li>
+              <li role="presentation"><a href="about.html" role="menuitem" class="navigation-list__item">About</a></li>
+              <li role="presentation"><a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a></li>
+            </ul>
+          </div>
+          </div>
+        <section>
+          <h1>Work</h1>
+          <div class="grid">
+            <!-- grid items will live here -->
+            <div class="grid-item">
+              <h2>Mobile app development</h2>
+              <p> Within this project, I was responsible for the frontend. It’s written in React.js. Additionally, I've created the HTML and CSS templates.</p>
+              <a href="#">See my project on Github</a>
+          </div>
+             <div class="grid-item">
+              <h2>Native MacOS application</h2>
+              <p> Within this project, I was responsible for the frontend. It’s written in Javafx.</p>
+              <a href="#">See project on Github</a>
+          </div>
+          <div class="grid-item">
+              <h2>NodeJS pdf generation</h2>
+              <p> Within this project, I created a service that generates pdf out of web pages with the help of node js server</p>
+              <a href="#">See my project on Github</a>
+          </div>
+          <div class="grid-item">
+              <h2>Style guide for portfolio page</h2>
+              <p>Here you can find the styleguide that I've created for this portfolio page. It was created with the living style guide gem and grunt.</p>
+              <a href="#">See style guide</a>
+          </div>
+          <div class="grid-item">
+              <h2>Medium blog</h2>
+              <p>I am also writing on medium.com about React.js</p>
+              <a href="#">See my latest blogpost</a>
+          </div>
+          <div class="grid-item">
+              <h2>Your project</h2>
+              <p>I can help in realising front-end and back-end project with the following technologies: React.js, JavaScript, Java, JavaFX, HTML and CSS. I am also happy to learn other technologies if needed.</p>
+              <a href="#">Contact me</a>
+          </div>
+          
+        </section>
+        <footer class="page__footer">
+                <p>Find me on</p>
+                <div class="social-media">
+                <img src="img/fb.svg" alt="Facebook">
+                <img src="img/linkedin.svg" alt="Linkedin">
+                <img src="img/twitter.svg" alt="Twitter">
+                </div>
+        </footer>
+         <script src="js/tota11y.min.js"></script>
+    </body>
+  </html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" width="device-width, initial-scale=1">
+  <title>Anjali's Portfolio</title>
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+  <link rel="resetcss" type="text/css" href="reset.html">
+</head> 
+    <body>
+        <div class="header"> 
+         <!-- header is the parent class and logo and navigation are its child classes -->
+          <div class="logo-container">
+            <h1>Anjali <Span>Tyagi</Span></h1>
+          </div>
+          <div>          
+              <ul role="menubar" class="navigation-list">       <!--class=navigation-list (block) -->
+                <li role="presentation"><a href="index.html" role="menuitem"
+                    class="navigation-list__item">Home</a></li> <!--navigation-list__item (element), navigation-list__item--active(modifier) -->
+                <li role="presentation"><a href="work.html" role="menuitem"
+                    class="navigation-list__item navigation-list__item--active">Work</a></li> 
+                <li role="presentation"><a href="about.html" role="menuitem"   
+                    class="navigation-list__item">About</a></li>
+                <li role="presentation"><a href="contact.html" role="menuitem"   
+                    class="navigation-list__item">Contact</a></li>
+              </ul>
+          </div>
+        </div> 
+        <form action="" method="post" id="contact-form">
+        
+            <label class="standard-label" for="contact-email">E-mail:</label>
+            <input type="email" id="contact-email" required>
+        
+            <label class="standard-label">Telephone:</label>
+            <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+        
+            <label class="standard-label">Message:</label>
+            <textarea required maxlength="240"></textarea>
+            <input type="submit" value="send message">
+        
+        </form>
+        
+        <div class="contact-item">
+            <h1>Contact</h1>
+        </div>
+        <div class="contact-item">
+            Anjali Tyagi<br>
+            1498 Danforth Road<br>
+            M1J-1H7 ON<br>
+            Canada<br>
+            <br>
+            Tel <a href="tel:+1234567890">+1234567890</a><br>
+            Skype <a href="skype:anjalityagi988@gmail.com">Skype</a><br>
+            <a href="mailto:anjalityagi988@gmail.com">anjalityagi988@gmail.com</a><br>
+            <a href="mailto:anjalityagi988@gmail.com">Contact me</a>
+        </div>
+        <footer class="page__footer">
+            <p>Find me on</p>
+            <div class="social-media">
+                <img src="img/fb.svg" alt="Facebook">
+                <img src="img/linkedin.svg" alt="Linkedin">
+                <img src="img/twitter.svg" alt="Twitter">
+            </div>
+        </footer>
+        <script src="js/tota11y.min.js"></script>
+        </body>
+        
+        </html>
