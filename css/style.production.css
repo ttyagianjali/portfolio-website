@@ -231,6 +231,8 @@ button:hover, button:focus, .button:hover, .button:focus{
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
+	position: relative;
+	left: 45%;
 } 
 .berlin-illustration{
 	display: -webkit-box;
@@ -384,19 +386,24 @@ button:hover, button:focus, .button:hover, .button:focus{
 	display: flex;
 	font-size: 30px;
 	font-weight: 150;
+	text-transform: uppercase;
 }
 .logo-container h1 span{
 	font-weight: 800;
+	margin-left: 10px;
 }
 .navigation-list{
 	list-style-type: none;
 	padding: 10px;
+	margin: 10px;
 
 }
 .navigation-list li{
 	display: inline-block;
 	padding: 0 15px;
 	text-transform: uppercase;
+	padding: 10px;
+	margin: 10px;
 }
 .navigation-list li a{
 	color: #ffffff;
@@ -422,10 +429,28 @@ button:hover, button:focus, .button:hover, .button:focus{
 		    -ms-flex-direction: column;
 		        flex-direction: column;
 	}
-	.navigation-list li{
-		text-align: center;
-	}
 }
-
+#contact-form{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	width: 50%;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	padding: 10px;
+	border: 1px solid #000000;
+	margin-top: 20px;
+	
+}
+.standard-label{
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
 
 

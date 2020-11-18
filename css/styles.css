@@ -190,6 +190,8 @@ button:hover, button:focus, .button:hover, .button:focus{
 .button{
 	width: 150px;
 	align-items: center;
+	position: relative;
+	left: 45%;
 } 
 .berlin-illustration{
 	display: flex;
@@ -279,18 +281,23 @@ button:hover, button:focus, .button:hover, .button:focus{
 	display: flex;
 	font-size: 30px;
 	font-weight: 150;
+	text-transform: uppercase;
 }
 .logo-container h1 span{
 	font-weight: 800;
+	margin-left: 10px;
 }
 .navigation-list{
 	list-style-type: none;
 	padding: 10px;
+	margin: 10px;
 
 }
 .navigation-list li{
 	display: inline-block;
 	padding: 0 15px;
+	padding: 10px;
+	margin: 10px;
 	text-transform: uppercase;
 }
 .navigation-list li a{
@@ -308,15 +315,24 @@ button:hover, button:focus, .button:hover, .button:focus{
 .contact-item a{
 	color: #615f5f;
 }
-@media all and (max-width: 400px) {
+@media all and (max-width: 500px) {
 	.navigation-list li{
 		flex-direction: column;
 	}
-	.navigation-list li{
-		text-align: center;
-	}
 }
-
+#contact-form{
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	justify-content: center;
+	padding: 10px;
+	border: var(--border-outline);
+	margin-top: 20px;
+	
+}
+.standard-label{
+	align-items: center;
+}
 
 
 
