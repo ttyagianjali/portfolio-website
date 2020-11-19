@@ -15,6 +15,7 @@ colors used */
 --animation-middle: #fcffad;
 --animation-end: #f76414;
 }
+
 *{
 	margin: 0;
 	padding: 0;
@@ -333,6 +334,7 @@ button:hover, button:focus, .button:hover, .button:focus{
 .standard-label{
 	align-items: center;
 }
+
 
 
 
