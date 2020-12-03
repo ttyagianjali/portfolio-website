@@ -21,7 +21,7 @@ colors used */
   margin: 0;
   padding: 0;
   list-style: none;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 html {
@@ -81,9 +81,8 @@ a:active {
   color: var(--green);
 }
 
-button,
+button, 
 .button
-
 { /* overwrites browser defaults and resets the border */
   border: none;	/* overwrites the default font of the browser and inherits the font fro the outer container */
   font-family: inherit;/* styles the background color, the font color and the text decorataion of the text in the button */
@@ -157,7 +156,7 @@ button:focus,
 .grid-item {
   background-color: var(--body-background-color);
   border: var(--border-outline);
-  padding: 10px;	
+  padding: 10px;
 }
 
 @media all and (max-width: 500px) {
@@ -302,7 +301,6 @@ button:focus,
 .navigation-list li {
   display: inline-block;
   padding: 0 15px;
-  padding: 10px;
   margin: 10px;
   text-transform: uppercase;
 }
@@ -328,17 +326,17 @@ button:focus,
 @media all and (max-width: 500px) {
   .navigation-list {
     display: flex;
-	flex-direction: column;
-	justify-content: center;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .header {
-	height: 250px;
-  } 
+    height: 250px;
+  }
 
   .logo-container {
-	  width: 100px;
-	  font-size: 20px;
+    width: 100px;
+    font-size: 20px;
   }
 }
 
@@ -353,8 +351,8 @@ button:focus,
 }
 
 @media all and (max-width: 500px) {
-    #contact-form {
-	width: 400px;
+  #contact-form {
+    width: 400px;
   }
 }
 

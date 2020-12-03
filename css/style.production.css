@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 2 version
+*/
+
 
 /*
 colors used */
@@ -6,7 +13,7 @@ colors used */
   margin: 0;
   padding: 0;
   list-style: none;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 html {
@@ -14,7 +21,8 @@ html {
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* body styling */
@@ -26,8 +34,13 @@ body {
   font-size: 16px;
   line-height: 1.6;
   min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 } /* header styles */
 
 h1 {
@@ -67,7 +80,6 @@ a:active {
 }
 
 button
-
 { /* overwrites browser defaults and resets the border */
   border: none;	/* overwrites the default font of the browser and inherits the font fro the outer container */
   font-family: inherit;/* styles the background color, the font color and the text decorataion of the text in the button */
@@ -78,11 +90,11 @@ button
   border-radius: 3px;
   margin-top: 10px;/* gives the button a width of 2px, a type of solid and a color in RGBA format */
   border-bottom: 2px solid RGBA(0,0,0,0.3);
+  -webkit-transition: 0.2s opacity;
   transition: 0.2s opacity;
 }
 
 .button
-
 { /* overwrites browser defaults and resets the border */
   border: none;	/* overwrites the default font of the browser and inherits the font fro the outer container */
   font-family: inherit;/* styles the background color, the font color and the text decorataion of the text in the button */
@@ -93,6 +105,7 @@ button
   border-radius: 3px;
   margin-top: 10px;/* gives the button a width of 2px, a type of solid and a color in RGBA format */
   border-bottom: 2px solid RGBA(0,0,0,0.3);
+  -webkit-transition: 0.2s opacity;
   transition: 0.2s opacity;
 }
 
@@ -131,23 +144,36 @@ button:focus,
 
 .page__footer {
   clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
 }
 
 .profile {
   max-width: 700px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .grid {
+  display: -ms-grid;
   display: grid;/*
 	grid-template-columns: 300px 300px 300px;
 	grid-template-rows: 300px 300px; */
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   padding: 5px;
@@ -156,17 +182,19 @@ button:focus,
 .grid-item {
   background-color: #fff;
   border: 1px solid #000;
-  padding: 10px;	
+  padding: 10px;
 }
 
 @media all and (max-width: 500px) {
   .grid {
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
+    -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -191,23 +219,50 @@ button:focus,
 }
 
 .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .button {
   width: 150px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   left: 45%;
 }
 
 .berlin-illustration {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@-webkit-keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
 
 @keyframes color-change {
@@ -225,35 +280,66 @@ button:focus,
 }
 
 .sun {
-  animation: 4s color-change infinite alternate linear;
+  -webkit-animation: 4s color-change infinite alternate linear;
+          animation: 4s color-change infinite alternate linear;
+}
+
+@-webkit-keyframes cloud-move {
+  from {
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
+  }
+
+  to {
+    -webkit-transform: translate(200px, 50px);
+            transform: translate(200px, 50px);
+  }
 }
 
 @keyframes cloud-move {
   from {
-    transform: translate(0, 50px);
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
   }
 
   to {
-    transform: translate(200px, 50px);
+    -webkit-transform: translate(200px, 50px);
+            transform: translate(200px, 50px);
   }
 }
 
 .cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
+  -webkit-animation: 30s cloud-move infinite alternate linear;
+          animation: 30s cloud-move infinite alternate linear;
+}
+
+@-webkit-keyframes cloud-move-reverse {
+  from {
+    -webkit-transform: translate(446px, 48px);
+            transform: translate(446px, 48px);
+  }
+
+  to {
+    -webkit-transform: translate(100px, 48px);
+            transform: translate(100px, 48px);
+  }
 }
 
 @keyframes cloud-move-reverse {
   from {
-    transform: translate(446px, 48px);
+    -webkit-transform: translate(446px, 48px);
+            transform: translate(446px, 48px);
   }
 
   to {
-    transform: translate(100px, 48px);
+    -webkit-transform: translate(100px, 48px);
+            transform: translate(100px, 48px);
   }
 }
 
 .cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
+  -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
+          animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 /* header styling */
@@ -261,19 +347,29 @@ button:focus,
   width: 100%;
   height: 100px;
   background-color: #111;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-left: 10px;
   padding-right: 10px;
 }
 
 .logo-container {
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   float: left;
   width: 200px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   top: 20%;
 }
@@ -281,6 +377,8 @@ button:focus,
 .logo-container h1 {
   color: #fff;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 30px;
   font-weight: 150;
@@ -301,7 +399,6 @@ button:focus,
 .navigation-list li {
   display: inline-block;
   padding: 0 15px;
-  padding: 10px;
   margin: 10px;
   text-transform: uppercase;
 }
@@ -316,7 +413,9 @@ button:focus,
 
 .navigation-list a:last-child {
   padding-right: 0;
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   text-align: right;
 }
 
@@ -326,37 +425,53 @@ button:focus,
 
 @media all and (max-width: 500px) {
   .navigation-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-	flex-direction: column;
-	justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .header {
-	height: 250px;
-  } 
+    height: 250px;
+  }
 
   .logo-container {
-	  width: 100px;
-	  font-size: 20px;
+    width: 100px;
+    font-size: 20px;
   }
 }
 
 #contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 600px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 10px;
   border: 1px solid #000;
   margin-top: 20px;
 }
 
 @media all and (max-width: 500px) {
-    #contact-form {
-	width: 400px;
+  #contact-form {
+    width: 400px;
   }
 }
 
 .standard-label {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
