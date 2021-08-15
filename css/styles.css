@@ -137,15 +137,31 @@ button:focus,
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-top: 50px;
+  margin-top: auto;
+  height: 120px;
 }
 
 .profile {
+  max-height: 500px;
   max-width: 700px;
-  margin: 0 auto;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.content-box{
+display: flex;
+  justify-content: center;
+  position: relative;
+
+}
+
+.contact-item{
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  margin-top: 150px;
 }
 
 .grid {
